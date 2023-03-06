@@ -1,12 +1,68 @@
+.container {
+  display: flex; /* Flex container */
+  justify-content: center; /* Alinear horizontalmente */
+  align-items: center; /* Alinear verticalmente */
+  flex-direction: column; /* Ordenar en columna */
+}
 
-/* 
+.trafficLight {
+  background-color: rgb(52, 52, 52);
+  width: 7rem;
+  height: 19rem;
+  margin: 2rem 2rem;
+  padding-top: 0.5rem;
+  border-radius: 1rem;
+  position: relative;
+}
 
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
+.light {
+  border-radius: 50%;
+  width: 5rem;
+  height: 4rem;
+  margin: 1.5rem 1rem;
+  border: 2px groove rgb(0, 55, 16);
+}
 
-*/
+.red {
+  background-color: rgb(255, 0, 0);
+}
+.orange {
+  background-color: rgb(255, 168, 38);
+}
+.green {
+  background-color: rgb(141, 255, 47);
+}
+.violet {
+  background-color: rgb(232, 94, 232);
+  position: absolute;
+  top: 16.5rem;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.glow {
+  box-shadow: 0px 0 20px 35px rgba(212, 255, 39, 0.21);
+}
+
+button {
+  background: linear-gradient(
+    to right,
+    #ff105f,
+    #ffad06
+  ); /* Efecto degradado */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 4px;
+  transition: 0.5s; /* Transición */
+  margin-top: 80px;
+}
+
+button:hover {
+  transform: scale(1.1); /* Aumentar el tamaño al pasar el ratón */
+}
